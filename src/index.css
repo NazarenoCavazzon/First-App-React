@@ -14,12 +14,19 @@ code {
 }
 
 .main {
-  margin: 0px;
+  margin: auto;
+  width: 100%;
+}
+
+.new-task-container {
+  position: fixed;
+  width: 33%;
+  display: inline-block;
 }
 
 .container {
   margin: auto;
-  width: 100%;
+  width: 40%;
 }
 
 .task {
@@ -56,6 +63,7 @@ code {
 .taskDescription {
   padding: 10px 15px;
   font-size: 20px;
+  word-wrap: break-word;
 }
 
 .input-text-newtask {

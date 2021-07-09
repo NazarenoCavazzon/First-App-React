@@ -37,13 +37,11 @@ class App extends Component {
   }
   render() {
     return <div className="main">
-      <div className="navbar">
-
+      <div className="new-task-container">
+        <AddTask newTask ={this.newTask}/>
       </div>
       <div className="container">
-        <h1>{}</h1>
         <Tasks tasks= {this.state.TaskList} deleteTask={this.deleteTask} checkDone={this.checkDone}/>
-        <AddTask newTask ={this.newTask}/>
       </div>
     </div>
   }
